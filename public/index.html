@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MySocial - Social Media Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>MySocial</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Profile -->
+        <section class="profile">
+
+            <h2>Radhika</h2>
+
+            <p>@radhika</p>
+
+            <p>
+                Welcome to my social media profile!
+            </p>
+
+        </section>
+
+
+        <!-- Create Post -->
+        <section class="create-post">
+
+            <h2>Create Post</h2>
+
+            <textarea
+                id="postText"
+                placeholder="What's on your mind?">
+            </textarea>
+
+            <br>
+
+            <button onclick="createPost()">
+                Post
+            </button>
+
+        </section>
+
+
+        <!-- Posts -->
+        <section id="posts">
+
+            <div class="post">
+
+                <h3>Radhika</h3>
+
+                <p>
+                    Hello! Welcome to my social media platform. 😊
+                </p>
+
+
+                <button onclick="likePost(this)">
+                    ❤️ Like <span>0</span>
+                </button>
+
+
+                <br><br>
+
+
+                <input
+                    type="text"
+                    placeholder="Write a comment...">
+
+                <button onclick="addComment(this)">
+                    Comment
+                </button>
+
+
+                <div class="comments"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
